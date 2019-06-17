@@ -19,6 +19,18 @@
     },
     "api-interface": {
       "tags": []
+    },
+    "auth": {
+      "tags": ["ui"]
+    },
+    "ui-shell": {
+      "tags": ["ui"]
+    },
+    "data": {
+      "tags": ["all"]
+    },
+    "nebular": {
+      "tags": ["ui"]
     }
   }
 }

@@ -16,7 +16,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nxb-repas/api-interface": ["libs/api-interface/src/index.ts"]
+      "@nxb-repas/api-interface": ["libs/api-interface/src/index.ts"],
+      "@nxb-repas/auth": ["libs/auth/src/index.ts"],
+      "@nxb-repas/ui-shell": ["libs/ui-shell/src/index.ts"],
+      "@nxb-repas/data": ["libs/data/src/index.ts"],
+      "@nxb-repas/nebular": ["libs/nebular/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
