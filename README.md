@@ -1,84 +1,38 @@
-# NxbRepas
+# NxbRepas - A turn management App
 
-This project was generated using [Nx](https://nx.dev).
+## Introduction
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
+Turn management for the *repás* which will allow to create turns, and let people to join them.
+Will be also possible to list turns and users.
+Users will be able to join to the turns by theirselves if there are gaps, but teachers would be also allowed to move pupils between turns in order to organize them, if it is needed.
 
-🔎 **Nx is a set of Angular CLI power-ups for modern development.**
+So if a pupil is moved by the teacher to another turn he or she will recieve a notification. (Not decided yet if it will be as push notification or another via (Whatsapp or Telegram)
 
-## Quick Start & Documentation
+To sum up, the final goal of the app is allow teachers to create turns, and let users to sign up.
 
-[Nx Documentation](https://nx.dev)
+## Learning Goals
 
-[30-minute video showing all Nx features](https://nx.dev/getting-started/what-is-nx)
+Some of the learning goals of this little project are:
 
-[Interactive Tutorial](https://nx.dev/tutorial/01-create-application)
+- Acquire deeper knowledge with Angular and NestJS.
+- Learn how to develop abstract and reusable components using container and presentational patterns.
+- Learn how TypeOrm works.
+- Learn about state management using NGXS.
+- Lear how to develop apps using the workspace approach (Using NX Workspace).
+- Learn about Angular Schematics.
 
-## Adding capabilities to your workspace
+## Stack
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+- [x] NestJS
+- [x] TypeOrm
+- [x] Angular 8+
+- [x] Postgres
+- [x] Ngxs
+- [x] Nebular
+- [x] Cypress
+- [x] Jest
+- [x] Docker
 
-These capabilities include generating applications, libraries, .etc as well as the devtools to test, and build projects as well.
+## Project structure
 
-Below are some plugins which you can add to your workspace:
-
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
-
-## Generate an application
-
-Run `ng g @nrwl/angular:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are sharable across libraries and applications. They can be imported from `@nxb-repas/mylib`.
-
-## Development server
-
-Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng g component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `ng build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `npm run affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `npm run affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `npm run dep-graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
+I am going to follow the feature - module architecture, but here all the functionalities that could be shared will be generated at the libs library following the Nx Workspace approach.
