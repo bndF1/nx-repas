@@ -7,9 +7,9 @@ export interface BaseInterface {
 
 export interface Turn extends BaseInterface {
   description: string;
-  schedule: Schedule;
+  schedule: ISchedule;
   capacity: number;
-  attendees?: Array<User>;
+  attendees?: Promise<Array<IUser>>;
 }
 
 export interface IRepeatableTurn extends Turn {
@@ -21,17 +21,17 @@ export interface IRepeatableTurn extends Turn {
   weekdays?: Array<number>;
 }
 
-export interface Schedule {
+export interface ISchedule {
   dateTimeFrom: Moment;
   dateTimeTo: Moment;
 }
 
-export interface User extends BaseInterface {
+export interface IUser extends BaseInterface {
   surname: string;
   phone?: number;
   email: string;
   password: string;
-  turns?: Array<Turn>;
+  turns?: Promise<Array<Turn>>;
 }
 
 export interface IWorkspace extends BaseInterface {
@@ -44,6 +44,6 @@ export interface IWorkspace extends BaseInterface {
 
 export interface Bussiness extends IWorkspace {
   owner: string;
-  schedule: Schedule;
+  schedule: ISchedule;
   opened?: boolean;
 }

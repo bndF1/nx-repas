@@ -1,10 +1,11 @@
-import { NebularModule } from '@nxb-repas/nebular';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { NebularModule } from '@nxb-repas/nebular';
 import { MainComponent } from './main/main.component';
 
 @NgModule({
   imports: [CommonModule, NebularModule],
-  declarations: [MainComponent]
+  declarations: [MainComponent],
+  exports: []
 })
 export class UiShellModule {}
